@@ -1,0 +1,30 @@
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+body {
+  --backcolor: #000;
+  --fontcolor: #fff;
+  --color1: blue;
+  --color2: rgb(177, 220, 249);
+  --color3: white;
+}
