@@ -1,0 +1,28 @@
+.cont {
+    display: inline-block;
+  }
+  .sec {
+    min-height: 100vh;
+  }
+  
+  .top {
+    background-color: #fcf1f1;
+  }
+  
+  .signup-image {
+    border-radius: 0 25px 25px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 15px 20px 20px 0px;
+  }
+  
+  .highlighted-input:focus {
+    outline: none; /* Remove default focus outline */
+    border: 2px solid rgb(63, 202, 121); /* Set border color to purple when focused */
+  }
+  
+  .abc {
+    margin-left: 180px;
+  }
+  
+  .k {
+    border: 10px solid black;
+  }

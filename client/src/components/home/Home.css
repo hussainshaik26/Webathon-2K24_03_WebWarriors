@@ -1,0 +1,32 @@
+.bgimage {
+    position: relative;
+    width: 100%;
+  }
+  .text {
+    position: absolute;
+    top: 350px;
+    color: white;
+  }
+  .mainhead {
+    font-size: 500%;
+  }
+  .img2 {
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 400px;
+  }
+  .ab {
+    padding-right: 40px;
+  }
+  .row p {
+    line-height: 1.8em;
+    text-align: justify;
+    padding: 5px;
+    font-size: 1.05rem;
+  }
+  .text-center p {
+    line-height: 1.5em;
+    text-align: left;
+    padding: 5px;
+    font-size: 1.05rem;
+  }

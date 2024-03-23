@@ -1,0 +1,143 @@
+.side-bar li {
+    font-size: 2rem;
+    line-height: 2em;
+    border-bottom: 2px solid black;
+  }
+  .side-bar li:hover {
+    background-color: black !important;
+    color: white !important;
+    /* font-size: 2.2rem; */
+    line-height: 2.5em;
+    border-radius: none;
+  }
+  .user-dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .left-container {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #cef0f5; /* Light grey background color */
+    padding: 20px; /* Add padding for better readability */
+    width: 10px;
+  }
+  
+  .right-container {
+    flex: 1;
+    background-color: #b3aeaf; /* Light grey background color */
+    padding: 20px; /* Add paddi.user-dashboard {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    
+    .left-container {
+      flex: 1;
+      margin-right: 20px;
+      background-color: #cef0f5; /* Light grey background color */
+    padding: 20px; /* Add padding for better readability */
+    width: 10px;
+  }
+  
+  .right-container {
+    flex: 1;
+    background-color: #b3aeaf; /* Light grey background color */
+    padding: 20px; /* Add padding for better readability */
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .follow-count {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+    /* border-radius: 20px; */
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 50px;
+  }
+  
+  .followers-container,
+  .following-container,
+  .reading-list-container,
+  .published-articles-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff; /* Add white background color to container content */
+  }
+  
+  .followers-container h3,
+  .following-container h3,
+  .reading-list-container h3,
+  .published-articles-container h3 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  ng for better readability */ .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .follow-count {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+    /* border-radius: 20px; */
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 50px;
+  }
+  
+  .followers-container,
+  .following-container,
+  .reading-list-container,
+  .published-articles-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff; /* Add white background color to container content */
+  }
+  
+  .followers-container h3,
+  .following-container h3,
+  .reading-list-container h3,
+  .published-articles-container h3 {
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }

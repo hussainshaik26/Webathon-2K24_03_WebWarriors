@@ -1,0 +1,35 @@
+.nav-link {
+  font-size: 1.2em;
+  color: var(--backcolor);
+}
+.nav-bar {
+  background-color: var(--backcolor);
+}
+.ul {
+  background-color: var(--backcolor);
+}
+.nav-item,
+.nav-link {
+  color: var(--fontcolor) !important;
+}
+.signout {
+  color: var(--fontcolor);
+}
+.active,
+.signout:hover,
+.nav-link:hover {
+  color: var(--backcolor) !important;
+  background-color: var(--fontcolor) !important;
+  font-weight: 400;
+  border-radius: 5%;
+}
+
+.logo {
+  border-radius: 50%;
+}
+ul.nav li {
+  color: var(--fontcolor);
+}
+.search {
+  outline: none;
+}

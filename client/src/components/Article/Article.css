@@ -1,0 +1,182 @@
+.article-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right-section {
+    flex: 2;
+  }
+  
+  .user-icon {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .follow-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .follow-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .article-info-box {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tags {
+    margin-bottom: 10px;
+  }
+  
+  .tags span {
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .rating-comments p {
+    margin: 5px 0;
+  }
+  
+  .like-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .like-btn:hover {
+    background-color: #218838;
+  }
+  
+  .description-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description {
+    margin: 0;
+  }
+  
+  .comment-section {
+    margin-top: 20px;
+  }
+  
+  .comment-section textarea {
+    width: calc(100% - 100px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .comment-section button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    margin-bottom: 10px;
+  }
+  
+  .comment .user {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .comment .text {
+    color: #333;
+  }
+  
+  .comment-section button {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .like-btn {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .like-btn.liked {
+    background-color: #f36666; /* Change color when liked */
+  }
+  
+  .user-icon {
+    width: 300px; /* Set the width of the user icon */
+    height: 300px; /* Set the height of the user icon */
+    border-radius: 50%; /* Make the user icon circular */
+  }
+  
+  .user-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire space */
+    border-radius: 50%; /* Maintain circular shape */
+  }
+  
+  .post-button {
+    display: block; /* Make the button a block element to occupy full width */
+    width: 6%; /* Set the width to fill the container */
+    padding: 10px; /* Add padding for better appearance */
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+  .post-button:hover {
+    background-color: #333; /* Darken the background color on hover */
+  }
+  
+  .user-info {
+    align-items: center; /* Align items vertically */
+  }
+  
+  .username {
+    margin-top: 5px; /* Adjust the margin as needed */
+    font-weight: bold; /* Optionally, make the username bold */
+  }
