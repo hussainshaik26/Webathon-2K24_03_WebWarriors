@@ -1,0 +1,171 @@
+###user creation
+POST http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+    "username":"amulya",
+    "password":"amulya",
+    "email":"amulya@mail.com",
+    "description":"",
+    "followers":[],
+    "following":[],
+    "readingList":[],
+    "articles":[],
+    "favorites":[]
+}
+
+
+###
+##user login
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "username":"ravi",
+    "password":"ravi"
+}
+
+
+###update user profile
+PUT http://localhost:4000/user-api/user/ravi
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+    "username":"ravi",
+    "password":"ravi",
+    "email":"ravi@mail.com",
+    "description":"hi this is ravi",
+    "followers":[],
+    "following":[],
+    "readingList":[],
+    "articles":[],
+    "favorites":[]
+}
+
+###
+#add new article
+POST http://localhost:4000/user-api/article
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+   "articleId":"{{$timestamp}}",
+   "title":"Fundamentals of JavaScript",
+   "category":"Programming",
+   "tags":["Javascript"],
+   "content":"JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.   It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles.",
+   "dateofCreation":"{{$datetime iso8601}}",
+   "dateOfModification":"{{$datetime iso8601}}",
+   "username":"ravi",
+   "comments":[],
+   "status":true,
+   "favorites":[],
+   "readingList":[]
+}
+
+
+###update article
+PUT http://localhost:4000/user-api/article
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+  "articleId": "1711169358",
+  "title": "Fundamentals of JavaScript",
+  "category": "Programming",
+  "tags": [
+    "Javascript"
+  ],
+  "content": "JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.   It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles.HEllo",
+  "dateofCreation": "2024-03-23T04:49:18.063Z",
+  "dateOfModification": "{{$datetime iso8601}}",
+  "username": "ravi",
+  "comments": [],
+  "status": true,
+  "favorites": [],
+  "readingList": []
+}
+
+
+###get articles of a user
+GET http://localhost:4000/user-api/articles/ravi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+
+###
+#get articles
+GET http://localhost:4000/user-api/articles
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+
+###
+##add favorites
+POST http://localhost:4000/user-api/article/favorite/1711169358
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+    "username":"ravi"
+}
+
+###add to readinglist
+POST http://localhost:4000/user-api/article/readingList/1711169358
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+    "username":"ravi"
+}
+
+
+###follow button
+POST http://localhost:4000/user-api/user/follow/amulya
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+    "username":"ravi"
+}
+
+
+###unfollow button
+POST http://localhost:4000/user-api/user/unfollow/amulya
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+    "username":"ravi"
+}
+
+
+###add comments
+POST http://localhost:4000/user-api/article/comment/1711169358
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+{
+    "username":"ravi",
+    "content":"Great content"
+}
+
+
+###get favorites of user
+GET http://localhost:4000/user-api/user/favorites/ravi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+
+
+###get reading list
+GET http://localhost:4000/user-api/user/readingList/ravi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+
+###get followers
+GET http://localhost:4000/user-api/user/followers/ravi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
+
+
+###get following
+GET http://localhost:4000/user-api/user/following/ravi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhdmkiLCJpYXQiOjE3MTExNjkxMzcsImV4cCI6MTcxMTI1NTUzN30.MmHZ8GYJbz_ML6mHQIY8LV4rxbgOU3Pfce4kq89QnTM
